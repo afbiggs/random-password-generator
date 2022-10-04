@@ -9,14 +9,15 @@ This repository includes the html, css, and javascript files needed in order to 
 ## Accessibility 
 
 * Direct access to deployed application:
-
-   
     
-* Access project repository to review entire workflow and indivual documents, images, and or commits. 
+    https://afbiggs.github.io/random-password-generator/
+   
+* Access project repository to view entire workflow and indivual documents, images, and or commits.
+    
+    https://github.com/afbiggs/random-password-generator
 
     
 ## Screenshots of Deployed Application 
-
 
 ![](/Images/password-generator.png)
 ![](Images/password-success.png)

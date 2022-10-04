@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-html,
-body,
 .wrapper {
   height: 100%;
   margin: 0;
@@ -87,11 +85,6 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
-}
-
-button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
 }
 
 .float-right {

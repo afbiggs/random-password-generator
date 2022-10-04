@@ -1,7 +1,7 @@
 // Click event listener to prompt 'prompt' questions when element "#generate" button is pushed.
 document.querySelector("#generate").addEventListener("click", writePW);
 
-// Arrays of numbers, symbols, and special characters used in password generation
+// Arrays of numbers, symbols, and characters used in password generation
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var symbols = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "<", ">","?"];
 var upperChar = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
@@ -14,7 +14,7 @@ var confirmNumbers;
 var confirmUpperChar;
 var confirmLowerChar;
 
-// Prompt appears, asking users how many characters they would like in the password. This starts the prompt sequence and will roll through using "ok" to confirm and "cancel" to skip.
+// Prompt appears, asking users how many characters they would like in the password. This starts the prompt sequence and will cycle through using "ok" to confirm and "cancel" to skip.
 function generatePW() {
   var confirmLength = (prompt("How many characters do you want your password to be?"));
 
@@ -56,14 +56,13 @@ while(confirmUpperChar === false && confirmLowerChar === false && confirmSymbols
 
 //Password string is empty since the variable is to be filled based on parameters
   var randomPW = ""
-// This will present list based based on input password length and randomized selected character types. Adds 1 to each until value ceiling (128) is reached (based on variable of 'confirmLength' on line 25)
+// This will present list based on input password length and randomized selected character types.
   for (var i = 0; i < confirmLength; i++) {
     randomPW = randomPW + passwordChars[Math.floor(Math.random() * passwordChars.length)];
     console.log(randomPW)
     }
     return randomPW;
 }
-// End of generation.
 
 // Function to actually write and place password in "#password" element area.
 function writePW() {

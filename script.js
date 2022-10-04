@@ -29,7 +29,7 @@ while(confirmLength <= 7 || confirmLength >= 129) {
   var confirmNumbers = confirm("Click OK if you want to include numbers in your password.");    
   var confirmLowerChar = confirm("Click OK if you want to to include lowercase letters in your password.");
   var confirmUpperChar = confirm("Click OK if you want to include uppercase letters in your password.");
- // If they opt out of all of the options, they must select atleast one.
+ // If they opt out of all of the options, they must select at least one.
 while(confirmUpperChar === false && confirmLowerChar === false && confirmSymbols === false && confirmNumbers === false) {
   alert("You must choose at least one of the previous options to continue.");
   var confirmSymbols = confirm("Click OK to confirm that you want to include symbols.");
